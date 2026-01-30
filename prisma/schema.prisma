@@ -48,7 +48,7 @@ model UsageLog {
   id          String    @id @default(uuid())
   userId      String
   equipmentId String
-  startTime   DateTime
+  startTime   DateTime  @default(now())
   endTime     DateTime?
   purpos      String
   notes       String
